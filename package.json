@@ -49,7 +49,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
-      "./node_modules/.bin/eslint --max-warnings=0",
+      "./node_modules/.bin/eslint --max-warnings=0 --fix",
       "pretty-quick --staged"
     ]
   }
