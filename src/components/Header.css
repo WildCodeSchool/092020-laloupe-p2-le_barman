@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header-div {
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-barman {
+  background-color: grey;
+  margin-left: 4rem;
+}
+
+#header-logo {
+  margin-right: 4rem;
+}
+@media screen and (max-width: 745px) {
+  #header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header-barman {
+    margin-left: 1rem;
+    height: 2rem;
+    width: 7rem;
+  }
+
+  #header-logo {
+    margin-right: 1rem;
+    height: 3rem;
+  }
+}
