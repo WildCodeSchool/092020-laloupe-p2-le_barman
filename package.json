@@ -1,8 +1,8 @@
 {
-  "name": "react-starter-template",
+  "name": "Le Barman",
   "version": "1.0.0",
-  "description": "template for react app",
-  "author": "Basile V. <basile64.v@gmail.com>",
+  "description": "An app for cocktail research.",
+  "author": "Valentin B. <valentin.broudinpro@gmail.com>, Maxence P. <maxencepointeau@gmail.com>, Fabien N. <fabienniepceron72@gmail.com>",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,8 @@
     "@babel/runtime": "^7.11.2",
     "babel-core": "^6.26.3",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.11.0",
