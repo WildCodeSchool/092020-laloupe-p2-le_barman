@@ -1,15 +1,13 @@
 import React from "react";
-// import axios from "axios";
+import axios from "axios";
+import './CardSystem.css';
 
 class CardSystem extends React.Component {
     constructor(props){
         super(props);
         this.state = {
             research : "",
-            name : "strDrink",
-            instructions : "strInstrutions",
-            ingredients : "demandé jérémy pour filter",
-            image : "strDrinkThumb"
+            resultDrinks : []
         }
 
     }
@@ -26,12 +24,11 @@ class CardSystem extends React.Component {
 
     fetchDrinksRandom = () => {
       const url = `https://www.thecocktaildb.com/api/json/v1/1/random.php`
-      console.log(url);
     }
 
   render(){
     return(
-      <section>
+      <section id="searchEngine">
         <div>
           <input id="searchName" type="text" placeholder="Enter a name:" onChange={this.searchName}></input>
           <button onClick={this.fetchDrinksByName}>Search</button>
