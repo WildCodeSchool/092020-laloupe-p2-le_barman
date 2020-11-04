@@ -1,11 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 #header-div {
-  background-color: grey;
+  background-color: rgb(70, 70, 70);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,12 +7,10 @@
 }
 
 #header-barman {
-  background-color: grey;
   margin-left: 4rem;
   height: 2.5rem;
 }
 #header-logo {
-  background-color: gray;
   margin-right: 4rem;
 }
 
