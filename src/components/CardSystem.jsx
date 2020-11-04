@@ -5,8 +5,7 @@ class CardSystem extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            researchName : "",
-            researchIngredient : "",
+            research : "",
             name : "strDrink",
             instructions : "strInstrutions",
             ingredients : "demandé jérémy pour filter",
@@ -16,23 +15,18 @@ class CardSystem extends React.Component {
     }
 
     searchName = () => {
-      this.setState({researchName: document.getElementById('searchName').value});
-    }
-
-    searchIngredient = () => {
-      this.setState({researchIngredient: document.getElementById('searchIngredient').value});
+      this.setState({research: document.getElementById('searchName').value});
     }
 
     fetchDrinksByName = () => {
-      const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${this.state.researchName}`
+      const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${this.state.research}`
       console.log(url);
       document.getElementById('searchName').value = null;
     }
 
-    fetchDrinksByIngredient = () => {
-      const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?i=${this.state.researchIngredient}`
+    fetchDrinksRandom = () => {
+      const url = `https://www.thecocktaildb.com/api/json/v1/1/random.php`
       console.log(url);
-      document.getElementById('searchName').value = null;
     }
 
   render(){
@@ -42,7 +36,8 @@ class CardSystem extends React.Component {
           <input id="searchName" type="text" placeholder="Enter a name:" onChange={this.searchName}></input>
           <button onClick={this.fetchDrinksByName}>Search</button>
         </div>
-        <div>        
+        <div>
+          <button onClick={this.fetchDrinksRandom}>Random</button>
         </div>
       </section>
     )
