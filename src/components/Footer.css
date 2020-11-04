@@ -55,8 +55,14 @@
 }
 
 .link {
-    text-align: center;
-    width: 50%;
-    text-decoration: none;
-    color: white;
+  text-align: center;
+  width: 50%;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 475px) {
+  .footer {
+    flex-direction: row;
+  }
 }
