@@ -68,7 +68,7 @@ body {
   color: white;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 475px) {
   .footer {
     flex-direction: row;
   }
