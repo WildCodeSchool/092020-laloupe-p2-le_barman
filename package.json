@@ -7,14 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel public/index.html --open --port 3000",
     "build": "parcel build public/index.html",
-    "lint": "eslint src/**/* --fix",
+    "lint": "eslint src/**/*.js* --fix",
     "format": "prettier --write \"src/**/*.+(js|jsx|json|yml|yaml|css|md|vue)\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.12.3",
+    "@babel/core": "^7.0.0-0",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/plugin-transform-runtime": "^7.12.1",
     "babel-core": "^6.26.3",
@@ -38,7 +38,8 @@
   "dependencies": {
     "axios": "^0.21.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
   },
   "husky": {
     "hooks": {
