@@ -2,27 +2,18 @@
   color: white;
 }
 .contact-form {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  flex-direction: column;
-  margin: 5%;
+  flex-direction: column; */
+  margin-inline: 15%;
+  margin-block: 5%;
   border: solid 1px;
   border-radius: 20px;
-  padding: 4 rem;
 }
-#contact-text {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 60%;
-}
-textarea {
-  border-radius: 10px;
-}
-
 .team {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
   list-style: none;
 }
 .img-team {
@@ -33,7 +24,64 @@ textarea {
   padding-top: 1rem;
   font: small-caps bold 24px/1 sans-serif;
 }
+
+@media screen and (min-width: 746px) {
+  #contact-text {
+    margin-block: 4rem;
+    width: 60%;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  capture {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-inline-start: 5%;
+  }
+  section {
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+  .capture {
+    display: inline-flex;
+  }
+  .contact-lastname {
+    margin-right: 1rem;
+  }
+  mail {
+    margin-right: auto;
+
+    margin-bottom: 2rem;
+  }
+  #contact-mail {
+    width: 31.5rem;
+  }
+  contactselect {
+    margin-right: auto;
+
+    margin-bottom: 4rem;
+  }
+  #choicelist {
+    width: 31.5rem;
+  }
+  textarea {
+    border-radius: 10px;
+    width: 31.5rem;
+    padding-top: 20px;
+  }
+  message {
+    margin-inline-start: 2%;
+  }
+}
 @media screen and (max-width: 745px) {
+  .contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 10%;
+    margin-block: 15%;
+  }
   #contact-text {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -41,16 +89,28 @@ textarea {
     text-align: center;
   }
   #section {
-    width: unset;
+    margin-inline-start: 5%;
+    display: flex;
   }
-  .contact-input {
-    width: 8.5rem;
-    margin: 0.5rem;
+  .contact-lastname {
+    width: 45%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .contact-firstname {
+    width: 45%;
+    margin-right: 1rem;
     margin-bottom: 1rem;
   }
   #contact-mail {
     width: 90%;
     margin-bottom: 1rem;
+  }
+  mail {
+    margin-inline: 5%;
+  }
+  contactselect {
+    margin-inline: 5%;
   }
   #choicelist {
     width: 90%;
@@ -61,10 +121,16 @@ textarea {
     width: 90%;
     margin-bottom: 2rem;
   }
+  textarea {
+    margin-inline: 5%;
+  }
   .img-team {
     width: 4rem;
   }
   .contact-name {
     font: small-caps bold 10px/1 sans-serif;
+  }
+  .team {
+    margin-bottom: 3rem;
   }
 }
