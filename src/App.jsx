@@ -1,22 +1,18 @@
 import React from "react";
-
-import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+// import { Switch, Route } from "react-router-dom";
 
 function App() {
-  const value = 0;
   return (
     <main className="container">
-      <div className="item">
-        <h1>Hello world !</h1>
-      </div>
-      <div className="item">
-        <p>Welcome to your fresh, lightweight, React App ! &#127752;</p>
-      </div>
-      <div className="item">
-        <p>
-          Start in the <code>App.jsx</code> component ! {value}
-        </p>
-      </div>
+      <Header />
+      {/* <Switch>
+        <Route exact path="/" component={CardSystem} />
+        <Route path="/CGU" component={CGU} />
+        <Route path="/ContactUs" component={ContactUs} />
+      </Switch> */}
+      <Footer />
     </main>
   );
 }
