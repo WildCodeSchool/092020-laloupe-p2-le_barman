@@ -8,12 +8,11 @@ function App() {
   return (
     <main className="container">
       <Header />
-      <CardSystem />
-      {/* <Switch>
+      <Switch>
         <Route exact path="/" component={CardSystem} />
         <Route path="/CGU" component={CGU} />
         <Route path="/ContactUs" component={ContactUs} />
-      </Switch> */}
+      </Switch>
       <Footer />
     </main>
   );

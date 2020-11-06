@@ -11,7 +11,7 @@ body {
 
 .footer {
   background-color: rgb(70, 70, 70);
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;

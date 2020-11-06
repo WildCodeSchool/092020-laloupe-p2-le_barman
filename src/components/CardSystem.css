@@ -1,5 +1,222 @@
 #searchEngine {
     background-color: rgb(70, 70, 70);
     width: 100%;
-    height: 100px;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputLine {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputLine input {
+    border: none;
+    text-align: center;
+}
+
+.inputLine2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputLine2 button {
+    margin: 0 40px;
+}
+
+#searchName {
+    margin-right: 10px;
+}
+
+button {
+    min-width: 80px;
+}
+
+#cardCont {
+    margin: 20px 0 140px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.cardBody {
+    background-color: rgb(70, 70, 70);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cardTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardImg {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.cardNaming {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardBody:hover .cardIngd {
+    margin: 10px 0;
+}
+
+.cardIngredient {
+    display: none;
+    text-align: center;
+    list-style: none;
+}
+
+.cardBody:hover .cardIngredient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardBtm {
+    display: none;
+}
+
+.cardBody:hover .cardBtm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardInstruct {
+    display: none;
+    margin-top: 10px;
+    width: 60%;
+}
+
+.cardBody:hover .cardInstruct {
+    display: flex;
+    width: 90%;
+}
+
+@media screen and (min-width: 475px) {
+    #searchEngine {
+        flex-direction: row;
+    }
+    
+    #cardCont {
+        margin: 20px 0 90px 0;
+    }
+
+    .cardBody {
+        width: 50%;
+        height: auto;
+    }
+
+    .cardTitle {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cardImg {
+        width: 65%;
+    }
+
+    .cardIngd {
+        margin: 10px 0;
+    }
+
+    .cardIngredient {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardBtm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .cardInstruct {
+        display: flex;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .cardBody {
+        width: 32%;
+        min-height: 470px;
+    }
+
+    .cardTitle {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cardImg {
+        width: 60%;
+    }
+
+    .cardNaming {
+        width: 40%;
+    }
+
+    .cardName {
+        width: 80%;
+    }
+
+    .cardIngd {
+        margin: 10px 0;
+    }
+
+    .cardIngredient {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardBtm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .cardInstruct {
+        display: flex;
+        width: 100%;
+    }
+
+    .cardBody:hover .cardInstruct {
+        display: flex;
+        width: 100%;
+    }
 }
