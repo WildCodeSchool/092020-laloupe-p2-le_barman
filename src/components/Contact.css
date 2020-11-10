@@ -2,9 +2,6 @@
   color: white;
 }
 .contact-form {
-  /* display: flex;
-  align-items: center;
-  flex-direction: column; */
   margin-inline: 15%;
   margin-block: 5%;
   border: solid 1px;
@@ -33,15 +30,15 @@
     text-align: center;
   }
 
+  section {
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
   capture {
     display: flex;
     flex-direction: column;
     width: 50%;
     margin-inline-start: 5%;
-  }
-  section {
-    margin-right: auto;
-    margin-bottom: 2rem;
   }
   .capture {
     display: inline-flex;
@@ -49,7 +46,7 @@
   .contact-lastname {
     margin-right: 1rem;
   }
-  mail {
+  adressmail {
     margin-right: auto;
 
     margin-bottom: 2rem;
@@ -73,13 +70,18 @@
   message {
     margin-inline-start: 2%;
   }
+  #submit {
+    display: flex;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+  }
 }
 @media screen and (max-width: 745px) {
   .contact-form {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-inline: 10%;
+    margin-inline: 2%;
     margin-block: 15%;
   }
   #contact-text {
@@ -106,7 +108,7 @@
     width: 90%;
     margin-bottom: 1rem;
   }
-  mail {
+  adressmail {
     margin-inline: 5%;
   }
   contactselect {
@@ -123,6 +125,9 @@
   }
   textarea {
     margin-inline: 5%;
+  }
+  #submit {
+    margin-bottom: 1rem;
   }
   .img-team {
     width: 4rem;
