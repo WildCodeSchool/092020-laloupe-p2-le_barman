@@ -40,9 +40,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-    #Poutre {
-        height: 700px;
-    }
     .Cadre {
         font-size: 20px;
     }
