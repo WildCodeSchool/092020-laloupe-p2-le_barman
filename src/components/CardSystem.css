@@ -17,6 +17,8 @@
 
 .inputLine input {
     border: none;
+    border-radius: 5px;
+    height: 30px;
     text-align: center;
 }
 
@@ -35,8 +37,11 @@
     margin-right: 10px;
 }
 
-button {
+#searchEngine button {
     min-width: 80px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
 }
 
 #cardCont {
@@ -125,6 +130,14 @@ button {
 @media screen and (min-width: 475px) {
     #searchEngine {
         flex-direction: row;
+    }
+
+    #searchEngine button {
+        height: 20px;
+    }
+
+    #searchEngine input {
+        height: 20px;
     }
     
     #cardCont {
