@@ -1,8 +1,9 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import CardSystem from './components/CardSystem';
 import CGU from "./components/CguPage";
-import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
