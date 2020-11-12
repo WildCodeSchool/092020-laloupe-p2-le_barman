@@ -13,14 +13,61 @@
     margin: 10px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: baseline;
+}
+
+.inputLine button {
+    outline: none;
+    border: none;
+    background-color: grey;
+    color: white;
+}
+
+.inputLine button:active {
+    box-shadow: 0px 0px 1px 2px rgb(40, 40, 40);
+}
+
+.form {
+    width: 50%;
+    position: relative;
+    color: white;
+    overflow: hidden;
 }
 
 .inputLine input {
     border: none;
     border-radius: 5px;
-    height: 30px;
-    text-align: center;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    background-color: grey;
+    color: white;
+    font-size: 14px;
+}
+
+.label-search {
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    width: 101%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.form label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: lightgrey solid 3px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+#searchName:focus + .label-search::after {
+    transform: translateX(0%);
 }
 
 .inputLine2 {
@@ -32,6 +79,14 @@
 
 .inputLine2 button {
     margin: 0 40px;
+    outline: none;
+    border: none;
+    background-color: grey;
+    color: white;
+}
+
+.inputLine2 button:active {
+    box-shadow: 0px 0px 1px 2px rgb(40, 40, 40);
 }
 
 #searchName {
@@ -131,14 +186,7 @@
 @media screen and (min-width: 475px) {
     #searchEngine {
         flex-direction: row;
-    }
-
-    #searchEngine button {
-        height: 20px;
-    }
-
-    #searchEngine input {
-        height: 20px;
+        align-items: baseline;
     }
     
     #cardCont {

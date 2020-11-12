@@ -62,10 +62,11 @@ class CardSystem extends React.Component {
       <div>
       <section id="searchEngine">
         <div className="inputLine">
-          <div>
-            <input id="searchName" type="text" value={this.state.research} placeholder="Enter a name:" onChange={this.searchName}></input>
-            <button onClick={this.fetchDrinksByName}>Search</button>
+          <div className="form">
+            <input id="searchName" type="text" name="search" value={this.state.research} autoComplete="off" onChange={this.searchName}></input>
+            <label className="label-search"></label>
           </div>
+            <button onClick={this.fetchDrinksByName}>Search</button>
         </div>
         <div className="inputLine2">
           <button onClick={this.fetchDrinksRandom}>Random</button>
