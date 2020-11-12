@@ -3,13 +3,15 @@
 }
 .contact-form {
   margin-inline: 15%;
-  margin-block: 5%;
+  margin-top: 3rem;
+  padding: 5%;
   border: solid 1px;
   border-radius: 20px;
 }
 .team {
   display: flex;
   justify-content: space-around;
+  margin-top: 5rem;
   margin-bottom: 7rem;
   list-style: none;
 }
@@ -24,56 +26,51 @@
 
 @media screen and (min-width: 746px) {
   #contact-text {
-    margin-block: 4rem;
+    margin-bottom: 4rem;
     width: 60%;
     margin-inline: auto;
     text-align: center;
   }
-
-  section {
-    margin-right: auto;
-    margin-bottom: 2rem;
+  allinput {
+    display: flex;
+    justify-content: center;
   }
-  capture {
+  #capture-input {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-inline-start: 5%;
-  }
-  .capture {
-    display: inline-flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    border-right-style: groove;
   }
   .contact-lastname {
-    margin-right: 1rem;
+    width: 48%;
+    margin-right: 2%;
   }
-  adressmail {
-    margin-right: auto;
-
-    margin-bottom: 2rem;
+  .contact-firstname {
+    width: 48%;
+    margin-left: 2%;
   }
   #contact-mail {
-    width: 31.5rem;
-  }
-  contactselect {
-    margin-right: auto;
-
-    margin-bottom: 4rem;
+    width: 100%;
   }
   #choicelist {
-    width: 31.5rem;
+    width: 100%;
   }
-  textarea {
+  #contact-message {
     border-radius: 10px;
-    width: 31.5rem;
-    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    margin-left: 3rem;
   }
-  message {
-    margin-inline-start: 2%;
+  .capture {
+    display: flex;
+    width: 100%;
   }
+
   #submit {
     display: flex;
     margin-inline: auto;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 }
 @media screen and (max-width: 745px) {
@@ -85,6 +82,21 @@
     margin-block: 15%;
   }
   #contact-text {
+    margin-block: 2rem;
+    text-align: center;
+  }
+  #section {
+    margin-bottom: 2rem;
+  }
+  .contact-lastname {
+    width: 49%;
+    margin-right: 2%;
+  }
+  .contact-firstname {
+    width: 49%;
+  }
+
+  /* #contact-text {
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 95%;
@@ -125,6 +137,19 @@
   }
   textarea {
     margin-inline: 5%;
+  } */
+  #contact-mail {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #choicelist {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #contact-message {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
   }
   #submit {
     margin-bottom: 1rem;
