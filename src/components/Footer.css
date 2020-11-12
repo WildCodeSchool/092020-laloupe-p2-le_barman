@@ -11,11 +11,7 @@ body {
 
 .footer {
   background-color: rgb(70, 70, 70);
-<<<<<<< HEAD
-  position: relative;
-=======
   position: fixed;
->>>>>>> dev
   bottom: 0;
   width: 100%;
   display: flex;
