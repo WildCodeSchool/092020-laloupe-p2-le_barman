@@ -194,8 +194,9 @@
     }
 
     .cardBody {
-        width: 50%;
+        width: 45%;
         height: auto;
+        margin: 10px;
     }
 
     .cardTitle {
@@ -234,7 +235,8 @@
 @media screen and (min-width: 800px) {
     .cardBody {
         width: 32%;
-        min-height: 470px;
+        margin: 0 0 15px 0;
+        min-height: 300px;
     }
 
     .cardTitle {
@@ -280,5 +282,11 @@
     .cardBody:hover .cardInstruct {
         display: flex;
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .cardBody {
+        min-height: 400px;
     }
 }
