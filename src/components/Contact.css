@@ -1,0 +1,127 @@
+.contact {
+  color: white;
+  margin-bottom: 150px;
+}
+.contact-form {
+  margin-inline: 15%;
+  margin-top: 3rem;
+  padding: 5%;
+  border: solid 1px;
+  border-radius: 20px;
+}
+.team {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  list-style: none;
+}
+.img-team {
+  border-radius: 50%;
+}
+.contact-name {
+  text-align: center;
+  padding-top: 1rem;
+  font: small-caps bold 24px/1 sans-serif;
+}
+@media screen and (min-width: 746px) {
+  #contact-text {
+    margin-bottom: 4rem;
+    width: 60%;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .allinput {
+    display: flex;
+    justify-content: center;
+  }
+  #capture-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 3rem;
+    border-right-style: groove;
+  }
+  .contact-lastname {
+    width: 48%;
+    margin-right: 2%;
+  }
+  .contact-firstname {
+    width: 48%;
+    margin-left: 2%;
+  }
+  #contact-mail {
+    width: 100%;
+  }
+  #choicelist {
+    width: 100%;
+    text-align: center;
+  }
+  #contact-message {
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    margin-left: 3rem;
+  }
+  .capture {
+    display: flex;
+    width: 100%;
+  }
+
+  #submit {
+    display: flex;
+    margin-inline: auto;
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 745px) {
+  .contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 2%;
+    margin-block: 15%;
+  }
+  #contact-text {
+    width: 100%;
+    margin-block: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #section {
+    margin-bottom: 2rem;
+  }
+  .contact-lastname {
+    width: 49%;
+    margin-right: 2%;
+  }
+  .contact-firstname {
+    width: 49%;
+  }
+
+  #contact-mail {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #choicelist {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #contact-message {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  #submit {
+    margin-bottom: 1rem;
+  }
+  .img-team {
+    width: 4rem;
+  }
+  .contact-name {
+    font: small-caps bold 10px/1 sans-serif;
+  }
+  .team {
+    margin-bottom: 3rem;
+  }
+}
