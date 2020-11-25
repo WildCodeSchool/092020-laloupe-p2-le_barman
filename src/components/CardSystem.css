@@ -1,284 +1,284 @@
 #searchEngine {
-    background-color: rgb(70, 70, 70);
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  background-color: rgb(70, 70, 70);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .inputLine {
-    width: 100%;
-    margin: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
 }
 
 .inputLine button {
-    outline: none;
-    border: none;
-    background-color: grey;
-    color: white;
+  outline: none;
+  border: none;
+  background-color: grey;
+  color: white;
 }
 
 .inputLine button:active {
-    box-shadow: 0px 0px 1px 2px rgb(40, 40, 40);
+  box-shadow: 0px 0px 1px 2px rgb(40, 40, 40);
 }
 
 .form {
-    width: 50%;
-    position: relative;
-    color: white;
-    overflow: hidden;
+  width: 50%;
+  position: relative;
+  color: white;
+  overflow: hidden;
 }
 
 .inputLine input {
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    width: 100%;
-    outline: none;
-    background-color: grey;
-    color: white;
-    font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  outline: none;
+  background-color: grey;
+  color: white;
+  font-size: 14px;
 }
 
 .label-search {
-    position: absolute;
-    bottom: 0;
-    left: -1px;
-    width: 101%;
-    height: 100%;
-    pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  width: 101%;
+  height: 100%;
+  pointer-events: none;
 }
 
 .form label::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 100%;
-    border-bottom: lightgrey solid 3px;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: lightgrey solid 3px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
 }
 
 #searchName:focus + .label-search::after {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .inputLine2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputLine2 button {
-    margin: 0 40px;
-    outline: none;
-    border: none;
-    background-color: grey;
-    color: white;
+  margin: 0 40px;
+  outline: none;
+  border: none;
+  background-color: grey;
+  color: white;
 }
 
 .inputLine2 button:active {
-    box-shadow: 0px 0px 1px 2px rgb(40, 40, 40);
+  box-shadow: 0px 0px 1px 2px rgb(40, 40, 40);
 }
 
 #searchName {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 #searchEngine button {
-    min-width: 80px;
-    border: none;
-    border-radius: 5px;
-    height: 30px;
+  min-width: 80px;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
 }
 
 #cardCont {
-    margin: 20px 0 140px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
+  margin: 20px 0 140px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
 
 .cardBody {
-    background-color: rgb(70, 70, 70);
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 10px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  background-color: rgb(70, 70, 70);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .cardTitle {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cardImg {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .cardNaming {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .cardBody:hover .cardIngd {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .cardIngredient {
-    display: none;
-    text-align: center;
-    list-style: none;
+  display: none;
+  text-align: center;
+  list-style: none;
 }
 
 .cardBody:hover .cardIngredient {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardBtm {
-    display: none;
+  display: none;
 }
 
 .cardBody:hover .cardBtm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cardInstruct {
+  display: none;
+  margin-top: 10px;
+  width: 60%;
+}
+
+.cardBody:hover .cardInstruct {
+  display: flex;
+  width: 90%;
+}
+
+@media screen and (min-width: 475px) {
+  #searchEngine {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  #cardCont {
+    margin: 20px 0 90px 0;
+  }
+
+  .cardBody {
+    width: 50%;
+    height: auto;
+  }
+
+  .cardTitle {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cardImg {
+    width: 65%;
+  }
+
+  .cardIngd {
+    margin: 10px 0;
+  }
+
+  .cardIngredient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardBtm {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-}
+  }
 
-.cardInstruct {
-    display: none;
-    margin-top: 10px;
-    width: 60%;
-}
-
-.cardBody:hover .cardInstruct {
+  .cardInstruct {
     display: flex;
     width: 90%;
-}
-
-@media screen and (min-width: 475px) {
-    #searchEngine {
-        flex-direction: row;
-        align-items: baseline;
-    }
-    
-    #cardCont {
-        margin: 20px 0 90px 0;
-    }
-
-    .cardBody {
-        width: 50%;
-        height: auto;
-    }
-
-    .cardTitle {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .cardImg {
-        width: 65%;
-    }
-
-    .cardIngd {
-        margin: 10px 0;
-    }
-
-    .cardIngredient {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cardBtm {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .cardInstruct {
-        display: flex;
-        width: 90%;
-    }
+  }
 }
 
 @media screen and (min-width: 800px) {
-    .cardBody {
-        width: 32%;
-        min-height: 470px;
-    }
+  .cardBody {
+    width: 32%;
+    min-height: 470px;
+  }
 
-    .cardTitle {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .cardTitle {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .cardImg {
-        width: 60%;
-    }
+  .cardImg {
+    width: 60%;
+  }
 
-    .cardNaming {
-        width: 40%;
-    }
+  .cardNaming {
+    width: 40%;
+  }
 
-    .cardName {
-        width: 80%;
-    }
+  .cardName {
+    width: 80%;
+  }
 
-    .cardIngd {
-        margin: 10px 0;
-    }
+  .cardIngd {
+    margin: 10px 0;
+  }
 
-    .cardIngredient {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .cardIngredient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .cardBtm {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+  .cardBtm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-    .cardInstruct {
-        display: flex;
-        width: 100%;
-    }
+  .cardInstruct {
+    display: flex;
+    width: 100%;
+  }
 
-    .cardBody:hover .cardInstruct {
-        display: flex;
-        width: 100%;
-    }
+  .cardBody:hover .cardInstruct {
+    display: flex;
+    width: 100%;
+  }
 }
