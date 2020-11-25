@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel public/index.html --open --port 3000",
     "build": "parcel build public/index.html",
-    "lint": "eslint src/**/*.js* --fix",
+    "lint": "eslint 'src/**/*.js*' --fix --max-warning=0",
     "format": "prettier --write \"src/**/*.+(js|jsx|json|yml|yaml|css|md|vue)\""
   },
   "keywords": [],
@@ -48,7 +48,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
-      "./node_modules/.bin/eslint --max-warnings=0 --fix"
+      "npm run lint"
     ],
     "*.+(json|css|md)": [
       "prettier --write"
