@@ -24,7 +24,6 @@
   padding-top: 1rem;
   font: small-caps bold 24px/1 sans-serif;
 }
-
 @media screen and (min-width: 746px) {
   #contact-text {
     margin-bottom: 4rem;
@@ -32,7 +31,7 @@
     margin-inline: auto;
     text-align: center;
   }
-  allinput {
+  .allinput {
     display: flex;
     justify-content: center;
   }
@@ -56,6 +55,7 @@
   }
   #choicelist {
     width: 100%;
+    text-align: center;
   }
   #contact-message {
     border-radius: 10px;
